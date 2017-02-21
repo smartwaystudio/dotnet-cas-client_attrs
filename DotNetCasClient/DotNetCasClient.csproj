@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{883A296E-C898-4D1F-9ED9-DE7569DEFB3D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -54,13 +52,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CasAuthentication.cs" />
@@ -177,8 +175,6 @@
     <Compile Include="Validation\Schema\Saml20\Metadata\IndexedEndpointType.cs" />
     <Compile Include="Validation\Schema\Saml20\Metadata\KeyDescriptorType.cs" />
     <Compile Include="Validation\Schema\Saml20\Metadata\KeyTypes.cs" />
-    <Compile Include="Validation\Schema\Saml20\Metadata\LocalizedNameType.cs" />
-    <Compile Include="Validation\Schema\Saml20\Metadata\LocalizedUriType.cs" />
     <Compile Include="Validation\Schema\Saml20\Metadata\OrganizationType.cs" />
     <Compile Include="Validation\Schema\Saml20\Metadata\PdpDescriptorType.cs" />
     <Compile Include="Validation\Schema\Saml20\Metadata\RequestedAttributeType.cs" />
@@ -253,6 +249,8 @@
     <Compile Include="Validation\Schema\XmlDsig\X509DataType.cs" />
     <Compile Include="Validation\Schema\XmlDsig\X509IssuerSerialType.cs" />
     <Compile Include="Validation\TicketValidationException.cs" />
+    <Compile Include="Validation\Schema\Saml20\Metadata\LocalizedURIType.cs" />
+    <Compile Include="Validation\Schema\Saml20\Metadata\LocalizedNameType.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
