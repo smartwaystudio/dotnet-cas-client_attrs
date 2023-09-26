@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Configuration.Provider;
-using System.Text;
-using System.Security.Principal;
-using System.Web;
 using System.Web.Security;
 
 namespace DotNetCasClient.Security
